@@ -1,4 +1,4 @@
 # lesson16-project
 
-project on progress..
+project in progress..
 
