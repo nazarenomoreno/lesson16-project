@@ -47,7 +47,7 @@ const reducer = (state: CartStateType, action: ReducerAction): CartStateType =>{
                 const qty: number = itemExist ? itemExist.qty + 1 : 1;    //si existe sumo uno, sino crea uno
 
 
-                return {...state, cart: [...filteredCart, {sku, name, price, qty}]};        //armo el nuevo carrito (useReducer es una versiona mas avanzaza de useState)
+                return {...state, cart: [...filteredCart, {sku, name, price, qty}]};        //armo el nuevo carrito (useReducer es una version mas avanzada de useState)
         }
         case REDUCER_ACTION_TYPE.REMOVE:{
                 if (!action.payload){
@@ -145,5 +145,6 @@ export const CartProvider = ({children}:ChildrenType):ReactElement =>{
     </CartContext.Provider>
   )
 }
+
 
 export default CartContext
